@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitt Multiplayer Spill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Multiplayer Arena</h1>
+    <canvas id="gameCanvas"></canvas>
+    <p>Bruk piltastene for å bevege deg.</p>
+    <p>Serverstatus: <span id="serverStatus">Kobler til...</span></p>
+
+    <!-- Viktig: Socket.IO klientbibliotek -->
+    <!-- Vi henter det fra en CDN for enkelhets skyld -->
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
